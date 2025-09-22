@@ -25,8 +25,8 @@ st.set_page_config(
 st.title("Repeated-Measures ANOVA – Complete Hand-Calculation Walk-Through")
 st.write(
     "Use the button below to generate a fresh random data set. "
-    "All workings update automatically so you can follow the mechanics with new numbers each time."
-    "The data table shows the scores of participants measured at three different time points: Pre (Week 0), Week 4, and Week 8."
+    "All workings update automatically so you can follow the mechanics with new numbers each time. "
+    "The data table shows the scores of participants measured at three different time points: Pre (Week 0), Week 4, and Week 8. "
     "Do participants’ scores change systematically over time, or are any observed differences simply due to chance variation?"
 )
 
