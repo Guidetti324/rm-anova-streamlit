@@ -38,7 +38,7 @@ DEFAULT_N_PARTICIPANTS: int = 12
 
 # ------------------------------ HELPER FUNCS ---------------------------------
 def rnd(x: float, dp: int = 4) -> float:
-    \"\"\"Round to dp decimal places; safe for non-finite inputs.\"\"\"
+    """Round to dp decimal places; safe for non-finite inputs."""
     if x is None or not np.isfinite(x):
         return float("nan")
     f = 10 ** dp
