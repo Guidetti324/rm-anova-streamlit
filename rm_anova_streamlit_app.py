@@ -46,9 +46,9 @@ def rnd(x: float, dp: int = 4) -> float:
 
 
 def generate_data(n: int = DEFAULT_N_PARTICIPANTS, seed: int | None = None) -> np.ndarray:
-    \"\"\"Generate a pseudo-random repeated-measures data grid of shape [n, 3].
+    """Generate a pseudo-random repeated-measures data grid of shape [n, 3].
     Baseline (Pre) is 9–18 inclusive; then small declines to Week 4 and Week 8.
-    \"\"\"
+    """
     rng = np.random.default_rng(seed)
     pre = rng.integers(9, 19, size=n)  # 9–18 inclusive
     wk4 = np.maximum(5, pre - rng.integers(0, 5, size=n))
