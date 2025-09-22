@@ -143,9 +143,9 @@ def compute_statistics(data: np.ndarray) -> RMStats:
 
 
 def f_critical(alpha: float, dfn: int, dfd: int) -> float:
-    \"\"\"Return F critical value at the upper tail for given alpha.
+    """Return F critical value at the upper tail for given alpha.
     Tries SciPy; falls back to a small lookup for (2, 22) used here.
-    \"\"\"
+    """
     try:
         from scipy.stats import f  # type: ignore
         return float(f.ppf(1 - alpha, dfn, dfd))
@@ -156,11 +156,11 @@ def f_critical(alpha: float, dfn: int, dfd: int) -> float:
 
 
 def paired_t_table(data: np.ndarray, absolute: bool = False) -> Tuple[pd.DataFrame, List[Dict[str, float]]]:
-    \"\"\"Compute pairwise paired-samples summary (Diff, Diff^2, sums, sd, t) for
+    """Compute pairwise paired-samples summary (Diff, Diff^2, sums, sd, t) for
     the three comparisons: Pre–Week4, Week4–Week8, Pre–Week8.
     If absolute=True, uses |diff| to match the original artefact; otherwise uses signed differences (recommended).
     Returns the long table and a list of per-comparison summaries.
-    \"\"\"
+    """
     n = data.shape[0]
     comparisons = [("Pre (Week 0)", 0, "Week 4", 1), ("Week 4", 1, "Week 8", 2), ("Pre (Week 0)", 0, "Week 8", 2)]
     long_rows = []
