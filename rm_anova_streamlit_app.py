@@ -2,7 +2,6 @@
 # rm_anova_streamlit_app.py
 # -----------------------------------------------------------------------------
 # Repeated-Measures ANOVA – Complete Hand-Calculation Walk-Through (Streamlit)
-# Rewritten from the original React/TSX component to a Streamlit app.
 # -----------------------------------------------------------------------------
 
 from __future__ import annotations
@@ -18,7 +17,7 @@ import streamlit as st
 
 # ------------------------------- PAGE SETUP ----------------------------------
 st.set_page_config(
-    page_title="Repeated-Measures ANOVA – Hand Calculations",
+    page_title="Dr Guidetti's Repeated-Measures ANOVA Hand Calculation Tool",
     layout="wide",
     page_icon="📊",
 )
